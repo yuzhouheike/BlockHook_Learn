@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		288FBEA220DFBB8700DDF3C9 /* BlockHookKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288FBEA120DFBB8600DDF3C9 /* BlockHookKit.framework */; };
+		288FBEA320DFBB8700DDF3C9 /* BlockHookKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 288FBEA120DFBB8600DDF3C9 /* BlockHookKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28FD92DA20DFA9D100FA7107 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD92D920DFA9D100FA7107 /* AppDelegate.m */; };
 		28FD92DD20DFA9D100FA7107 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD92DC20DFA9D100FA7107 /* ViewController.m */; };
 		28FD92E020DFA9D100FA7107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FD92DE20DFA9D100FA7107 /* Main.storyboard */; };
@@ -15,7 +17,9 @@
 		28FD92E820DFA9D100FA7107 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD92E720DFA9D100FA7107 /* main.m */; };
 		28FD92F220DFA9D200FA7107 /* BlockHookLearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD92F120DFA9D200FA7107 /* BlockHookLearTests.m */; };
 		28FD92FD20DFA9D200FA7107 /* BlockHookLearUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD92FC20DFA9D200FA7107 /* BlockHookLearUITests.m */; };
-		28FD930B20DFB2E200FA7107 /* BlockHookKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD930A20DFB2E100FA7107 /* BlockHookKit.framework */; };
+		33ECEAD12D50F5E1FB639AA5 /* libPods-BlockHookLearUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2C6377B522FAF3A47830A5 /* libPods-BlockHookLearUITests.a */; };
+		9A02C79AB59DD59B522EF13F /* libPods-BlockHookLear.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4E9B8B7181A7FD666ED139 /* libPods-BlockHookLear.a */; };
+		AB12BF607C2C1EDF5DFE21AE /* libPods-BlockHookLearTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92241F7D76050E67B153A59E /* libPods-BlockHookLearTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		288FBE9F20DFB9BE00DDF3C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				288FBEA320DFBB8700DDF3C9 /* BlockHookKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2546B13CC8542CB50AB29EDD /* Pods-BlockHookLearTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockHookLearTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockHookLearTests/Pods-BlockHookLearTests.release.xcconfig"; sourceTree = "<group>"; };
+		288FBEA120DFBB8600DDF3C9 /* BlockHookKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BlockHookKit.framework; path = Carthage/Build/iOS/BlockHookKit.framework; sourceTree = "<group>"; };
 		28FD92D520DFA9D100FA7107 /* BlockHookLear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockHookLear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FD92D820DFA9D100FA7107 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28FD92D920DFA9D100FA7107 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,7 +72,14 @@
 		28FD92F820DFA9D200FA7107 /* BlockHookLearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockHookLearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FD92FC20DFA9D200FA7107 /* BlockHookLearUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockHookLearUITests.m; sourceTree = "<group>"; };
 		28FD92FE20DFA9D200FA7107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28FD930A20DFB2E100FA7107 /* BlockHookKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BlockHookKit.framework; path = Carthage/Build/iOS/BlockHookKit.framework; sourceTree = "<group>"; };
+		2B4E9B8B7181A7FD666ED139 /* libPods-BlockHookLear.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlockHookLear.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E7B7074AB94DAD27F902F2 /* Pods-BlockHookLearTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockHookLearTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockHookLearTests/Pods-BlockHookLearTests.debug.xcconfig"; sourceTree = "<group>"; };
+		416A1DD07C642DC4F9EAC271 /* Pods-BlockHookLearUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockHookLearUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockHookLearUITests/Pods-BlockHookLearUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42D023594A9F75180BC3B5B5 /* Pods-BlockHookLear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockHookLear.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockHookLear/Pods-BlockHookLear.debug.xcconfig"; sourceTree = "<group>"; };
+		4A2C6377B522FAF3A47830A5 /* libPods-BlockHookLearUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlockHookLearUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F5403589FC819C7BF705A7 /* Pods-BlockHookLearUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockHookLearUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockHookLearUITests/Pods-BlockHookLearUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92241F7D76050E67B153A59E /* libPods-BlockHookLearTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlockHookLearTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D87F8C7A563580E958BD67 /* Pods-BlockHookLear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockHookLear.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockHookLear/Pods-BlockHookLear.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FD930B20DFB2E200FA7107 /* BlockHookKit.framework in Frameworks */,
+				288FBEA220DFBB8700DDF3C9 /* BlockHookKit.framework in Frameworks */,
+				9A02C79AB59DD59B522EF13F /* libPods-BlockHookLear.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB12BF607C2C1EDF5DFE21AE /* libPods-BlockHookLearTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,19 +104,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33ECEAD12D50F5E1FB639AA5 /* libPods-BlockHookLearUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28F083D4AE7A5DB939392FCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B4E9B8B7181A7FD666ED139 /* libPods-BlockHookLear.a */,
+				92241F7D76050E67B153A59E /* libPods-BlockHookLearTests.a */,
+				4A2C6377B522FAF3A47830A5 /* libPods-BlockHookLearUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		28FD92CC20DFA9D100FA7107 = {
 			isa = PBXGroup;
 			children = (
+				288FBEA120DFBB8600DDF3C9 /* BlockHookKit.framework */,
 				28FD92D720DFA9D100FA7107 /* BlockHookLear */,
 				28FD92F020DFA9D200FA7107 /* BlockHookLearTests */,
 				28FD92FB20DFA9D200FA7107 /* BlockHookLearUITests */,
 				28FD92D620DFA9D100FA7107 /* Products */,
+				93A5258D8BA38C01DE00043A /* Pods */,
+				28F083D4AE7A5DB939392FCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +150,6 @@
 				28FD92D820DFA9D100FA7107 /* AppDelegate.h */,
 				28FD92D920DFA9D100FA7107 /* AppDelegate.m */,
 				28FD92DB20DFA9D100FA7107 /* ViewController.h */,
-				28FD930A20DFB2E100FA7107 /* BlockHookKit.framework */,
 				28FD92DC20DFA9D100FA7107 /* ViewController.m */,
 				28FD92DE20DFA9D100FA7107 /* Main.storyboard */,
 				28FD92E120DFA9D100FA7107 /* Assets.xcassets */,
@@ -136,6 +178,19 @@
 			path = BlockHookLearUITests;
 			sourceTree = "<group>";
 		};
+		93A5258D8BA38C01DE00043A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42D023594A9F75180BC3B5B5 /* Pods-BlockHookLear.debug.xcconfig */,
+				F3D87F8C7A563580E958BD67 /* Pods-BlockHookLear.release.xcconfig */,
+				37E7B7074AB94DAD27F902F2 /* Pods-BlockHookLearTests.debug.xcconfig */,
+				2546B13CC8542CB50AB29EDD /* Pods-BlockHookLearTests.release.xcconfig */,
+				74F5403589FC819C7BF705A7 /* Pods-BlockHookLearUITests.debug.xcconfig */,
+				416A1DD07C642DC4F9EAC271 /* Pods-BlockHookLearUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +198,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28FD930120DFA9D200FA7107 /* Build configuration list for PBXNativeTarget "BlockHookLear" */;
 			buildPhases = (
+				658E74B9B74716C7529AF924 /* [CP] Check Pods Manifest.lock */,
 				28FD92D120DFA9D100FA7107 /* Sources */,
 				28FD92D220DFA9D100FA7107 /* Frameworks */,
 				28FD92D320DFA9D100FA7107 /* Resources */,
+				288FBE9F20DFB9BE00DDF3C9 /* Embed Frameworks */,
+				288FBEA020DFBA9300DDF3C9 /* ShellScript */,
+				39A6D80E141F49DCBE785539 /* [CP] Embed Pods Frameworks */,
+				F9A8C3ADBF34E97B13131107 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28FD930420DFA9D200FA7107 /* Build configuration list for PBXNativeTarget "BlockHookLearTests" */;
 			buildPhases = (
+				512D65C4BD4BEEC408864071 /* [CP] Check Pods Manifest.lock */,
 				28FD92E920DFA9D200FA7107 /* Sources */,
 				28FD92EA20DFA9D200FA7107 /* Frameworks */,
 				28FD92EB20DFA9D200FA7107 /* Resources */,
+				8801F5A95AF1DE65164B42AB /* [CP] Embed Pods Frameworks */,
+				4D4ADDA30CCE28A5787F4A7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28FD930720DFA9D200FA7107 /* Build configuration list for PBXNativeTarget "BlockHookLearUITests" */;
 			buildPhases = (
+				F5E3F4770628208938639CFE /* [CP] Check Pods Manifest.lock */,
 				28FD92F420DFA9D200FA7107 /* Sources */,
 				28FD92F520DFA9D200FA7107 /* Frameworks */,
 				28FD92F620DFA9D200FA7107 /* Resources */,
+				D964FB6BA729318F658CD1CF /* [CP] Embed Pods Frameworks */,
+				3CF7E7CE1625E6D5B54732FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +329,167 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		288FBEA020DFBA9300DDF3C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BlockHookKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/Carthage copy-frameworks";
+		};
+		39A6D80E141F49DCBE785539 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLear/Pods-BlockHookLear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CF7E7CE1625E6D5B54732FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLearUITests/Pods-BlockHookLearUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D4ADDA30CCE28A5787F4A7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLearTests/Pods-BlockHookLearTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		512D65C4BD4BEEC408864071 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlockHookLearTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		658E74B9B74716C7529AF924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlockHookLear-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8801F5A95AF1DE65164B42AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLearTests/Pods-BlockHookLearTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D964FB6BA729318F658CD1CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLearUITests/Pods-BlockHookLearUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E3F4770628208938639CFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlockHookLearUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A8C3ADBF34E97B13131107 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLear/Pods-BlockHookLear-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28FD92D120DFA9D100FA7107 /* Sources */ = {
@@ -432,6 +659,7 @@
 		};
 		28FD930220DFA9D200FA7107 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42D023594A9F75180BC3B5B5 /* Pods-BlockHookLear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,8 +667,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BlockHookLear/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = BlockHookLear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuzhouheike.cn.BlockHookLear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,6 +680,7 @@
 		};
 		28FD930320DFA9D200FA7107 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D87F8C7A563580E958BD67 /* Pods-BlockHookLear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,8 +688,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BlockHookLear/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = BlockHookLear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuzhouheike.cn.BlockHookLear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -468,6 +701,7 @@
 		};
 		28FD930520DFA9D200FA7107 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E7B7074AB94DAD27F902F2 /* Pods-BlockHookLearTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +717,7 @@
 		};
 		28FD930620DFA9D200FA7107 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2546B13CC8542CB50AB29EDD /* Pods-BlockHookLearTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -498,6 +733,7 @@
 		};
 		28FD930820DFA9D200FA7107 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F5403589FC819C7BF705A7 /* Pods-BlockHookLearUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K524Q8368;
@@ -512,6 +748,7 @@
 		};
 		28FD930920DFA9D200FA7107 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416A1DD07C642DC4F9EAC271 /* Pods-BlockHookLearUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K524Q8368;
