@@ -41,20 +41,47 @@
 - (NSString*)getMyName
 {
 	%log;
-    
+
     NSString* password = MSHookIvar<NSString*>(self,"_password");
-    
+
     NSLog(@"password:%@", password);
-    
+
     [%c(CustomViewController) classMethod];
-    
+
     [self newMethod:@"output"];
-    
+
     self.newProperty = @"newProperty";
-    
+
     NSLog(@"newProperty : %@", self.newProperty);
 
 	return %orig();
+}
+
+%end
+
+%hook NSURLSession
+
+// -(NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request
+// completionHandler:(void (^)(NSData *data,NSURLResponse *response,NSError *error))completionHandler {
+// void (^replacedCompletion)(NSData *,NSURLResponse *,NSError *) = ^void(NSData *newData,
+//                                                                            NSURLResponse *newResponse,
+//                                                                            NSError *newError) {
+//
+//         NSString *responseString = [[NSString alloc] initWithData:newData encoding:NSUTF8StringEncoding];
+//         NSLog(@"responseString %@",responseString);
+//         // completionHandler(newData, newResponse, newError);
+//     };
+//
+//     return %orig(request, replacedCompletion);
+// }
+
+%end
+
+%hook CQUser
+
+-(double)end_time{
+
+	return 1561391298;
 }
 
 %end

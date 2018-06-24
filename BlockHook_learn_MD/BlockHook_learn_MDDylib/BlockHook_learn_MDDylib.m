@@ -16,6 +16,12 @@
 #import <BlockHookKit/BlockHookKit.h>
 #import "IIFishBind.h"
 
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr, "%s:%zd\t%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
 CHConstructor{
     NSLog(INSERT_SUCCESS_WELCOME);
     
@@ -97,8 +103,14 @@ CHMethod(5, void, AFHTTPSessionManager, POST, id, arg1, parameters, id, arg2, pr
         NSLog(@"responseObject:%@", responseObject);
 //        arg4(task,responseObject);
     };
-       return CHSuper(5, AFHTTPSessionManager, POST, arg1, parameters,arg2, progress, arg3, success, arg4, failure, arg5);
     
+   
+    if (newSucess) {
+        return CHSuper(5, AFHTTPSessionManager, POST, arg1, parameters,arg2, progress, arg3, success, newSucess, failure, arg5);
+
+    }
+    
+
 //        BHToken *tokenInstead = [arg4 block_hookWithMode:BlockHookModeInstead usingBlock:^(BHToken *token, NSURLSessionDataTask * _Nonnull task,id  _Nullable responseObject){
 //            [token invokeOriginalBlock];
 //            NSLog(@"let me see original result: %d", *(int *)(token.retValue));
@@ -145,7 +157,10 @@ CHMethod(5, void, AFHTTPSessionManager, GET, id, arg1, parameters, id, arg2, pro
         NSLog(@"打印请求回来的数据====================\n%@", responseObject);
         //        arg4(task,responseObject);
     };
-    return CHSuper(5, AFHTTPSessionManager, GET, arg1, parameters,arg2, progress, arg3, success, newSucess, failure, arg5);
+    if (newSucess) {
+        return CHSuper(5, AFHTTPSessionManager, GET, arg1, parameters,arg2, progress, arg3, success, newSucess, failure, arg5);
+    }
+    return CHSuper(5, AFHTTPSessionManager, GET, arg1, parameters,arg2, progress, arg3, success, arg4, failure, arg5);
  
 }
 
@@ -159,6 +174,6 @@ CHConstructor{
     
     CHLoadLateClass(AFHTTPSessionManager);
 //    CHClassHook(5, AFHTTPSessionManager, POST, parameters, progress, success, failure);
-    CHClassHook(5, AFHTTPSessionManager, GET, parameters, progress, success, failure);
+//    CHClassHook(5, AFHTTPSessionManager, GET, parameters, progress, success, failure);
 }
 
