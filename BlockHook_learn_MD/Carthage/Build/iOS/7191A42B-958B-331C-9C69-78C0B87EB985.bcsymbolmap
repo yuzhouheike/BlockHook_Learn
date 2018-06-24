@@ -1,0 +1,105 @@
+BCSymbolMap Version: 2.0
+-[BHDealloc dealloc]
+-[BHDealloc token]
+-[BHDealloc setToken:]
+-[BHDealloc deadBlock]
+-[BHDealloc setDeadBlock:]
+-[BHDealloc .cxx_destruct]
+-[BHToken initWithBlock:]
+_BHBlockTypeEncodeString
+-[BHToken dealloc]
++[BHToken load]
+__hunt_blocks_for_image
+-[BHToken remove]
+-[BHToken setMode:]
+-[BHToken setHookBlock:]
+-[BHToken setBlockDeadCallback:]
+-[BHToken mangleName]
+-[BHToken invokeOriginalBlock]
+-[BHToken _allocate:]
+-[BHToken _ffiArgForEncode:]
+-[BHToken _argsWithEncodeString:getCount:]
+-[BHToken _prepCIF:withEncodeString:]
+-[BHToken _prepClosure]
+_BHFFIClosureFunc
+-[BHToken invokeHookBlockWithArgs:]
+-[BHToken mode]
+-[BHToken args]
+-[BHToken setArgs:]
+-[BHToken retValue]
+-[BHToken setRetValue:]
+-[BHToken allocations]
+-[BHToken setAllocations:]
+-[BHToken block]
+-[BHToken setBlock:]
+-[BHToken numberOfArguments]
+-[BHToken setNumberOfArguments:]
+-[BHToken hookBlock]
+-[BHToken setMangleName:]
+-[BHToken .cxx_destruct]
+-[NSObject(BlockHook) block_hookWithMode:usingBlock:]
+-[NSObject(BlockHook) block_removeHook:]
+_OBJC_IVAR_$_BHDealloc._token
+_OBJC_IVAR_$_BHDealloc._deadBlock
+_OBJC_IVAR_$_BHToken._allocations
+_OBJC_IVAR_$_BHToken._block
+_OBJC_IVAR_$_BHToken._replacementInvoke
+_OBJC_IVAR_$_BHToken._closure
+_OBJC_IVAR_$_BHToken._cif
+_OBJC_IVAR_$_BHToken._numberOfArguments
+_block_invoke_mangle_cache_mutex
+_OBJC_IVAR_$_BHToken._originInvoke
+_OBJC_IVAR_$_BHToken._mode
+_OBJC_IVAR_$_BHToken._hookBlock
+_OBJC_IVAR_$_BHToken._mangleName
+_block_invoke_mangle_cache
+_OBJC_IVAR_$_BHToken._args
+_OBJC_IVAR_$_BHToken._retValue
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+/Users/travis/build/yulingtianxia/BlockHook/BlockHook/BlockHook.m
+/Users/travis/build/yulingtianxia/BlockHook
+/Users/travis/build/yulingtianxia/BlockHook/BlockHook/BlockHook.h
+BHFFIClosureFunc
+BHSizeAndAlignment
+BHArgCount
+_hunt_blocks_for_image
+BHBlockTypeEncodeString
+/Users/travis/Library/Developer/Xcode/DerivedData/BlockHookWorkSpace-eroqtyutpipnnbaintsqmnmzpiqp/Build/Intermediates.noindex/ArchiveIntermediates/BlockHookKit/IntermediateBuildFilesPath/BlockHookSample.build/Release-iphoneos/BlockHookKit.build/DerivedSources/BlockHookKit_vers.c
+_ffi_trampoline_lock
+_ffi_trampoline_tables
+/Users/travis/build/yulingtianxia/BlockHook/libffi/darwin_common/src/closures.c
+/Users/travis/build/yulingtianxia/BlockHook/libffi
+ffi_closure_free
+ffi_trampoline_table_free
+ffi_closure_alloc
+ffi_trampoline_table_alloc
+_initialize_aggregate
+/Users/travis/build/yulingtianxia/BlockHook/libffi/darwin_common/src/prep_cif.c
+ffi_get_struct_offsets
+ffi_prep_closure
+ffi_prep_cif_var
+ffi_prep_cif
+initialize_aggregate
+ffi_prep_cif_core
+_ffi_elements_complex_float
+_ffi_elements_complex_double
+/Users/travis/build/yulingtianxia/BlockHook/libffi/darwin_common/src/types.c
+_is_vfp_type
+_ffi_call_int
+_is_hfa0
+_is_hfa1
+/Users/travis/build/yulingtianxia/BlockHook/libffi/darwin_ios/src/aarch64/ffi_arm64.c
+is_hfa1
+is_hfa0
+ffi_closure_SYSV_inner
+allocate_to_stack
+allocate_int_to_reg_or_stack
+compress_hfa_type
+ffi_prep_closure_loc
+ffi_call_int
+extend_integer_type
+extend_hfa_type
+ffi_call
+ffi_prep_cif_machdep_var
+is_vfp_type
+ffi_prep_cif_machdep

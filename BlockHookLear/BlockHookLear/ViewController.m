@@ -32,7 +32,7 @@
     AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
     manger.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
     [manger GET:@"http://super.xianjinxia.com/credit-user/reg-get-code?clientType=ios&appName=jsxjx&deviceId=009b8410354044699013b6bf7c101f2&appVersion=2.6.1&packageId=com.innext.XianjinXia&mobilePhone=17600230975" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        block = success;
+       
         NSLog(@"%@", responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@", error);

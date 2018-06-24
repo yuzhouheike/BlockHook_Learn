@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		282D039C20DFE2CD009ECAEF /* IIFishBind.m in Sources */ = {isa = PBXBuildFile; fileRef = 282D039A20DFE2BB009ECAEF /* IIFishBind.m */; };
+		288FBEB920DFC88A00DDF3C9 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 288FBEB820DFC88A00DDF3C9 /* MDConfig.plist */; };
+		288FBEC320DFC88B00DDF3C9 /* libBlockHook_learn_MDDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 288FBEC220DFC88B00DDF3C9 /* libBlockHook_learn_MDDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		288FBEC820DFC88B00DDF3C9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288FBEC720DFC88B00DDF3C9 /* JavaScriptCore.framework */; };
+		288FBECA20DFC88B00DDF3C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288FBEC920DFC88B00DDF3C9 /* Foundation.framework */; };
+		288FBECC20DFC88B00DDF3C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288FBECB20DFC88B00DDF3C9 /* UIKit.framework */; };
+		288FBED120DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 288FBED020DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.mm */; };
+		288FBED420DFC88B00DDF3C9 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 288FBED320DFC88B00DDF3C9 /* MDConfigManager.h */; };
+		288FBED620DFC88B00DDF3C9 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 288FBED520DFC88B00DDF3C9 /* MDConfigManager.m */; };
+		288FBED820DFC88B00DDF3C9 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 288FBED720DFC88B00DDF3C9 /* MDCycriptManager.h */; };
+		288FBEDA20DFC88B00DDF3C9 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 288FBED920DFC88B00DDF3C9 /* MDCycriptManager.m */; };
+		288FBEDC20DFC88B00DDF3C9 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 288FBEDB20DFC88B00DDF3C9 /* MDMethodTrace.h */; };
+		288FBEDE20DFC88B00DDF3C9 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 288FBEDD20DFC88B00DDF3C9 /* MDMethodTrace.m */; };
+		288FBEE020DFC88B00DDF3C9 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 288FBEDF20DFC88B00DDF3C9 /* ANYMethodLog.h */; };
+		288FBEE220DFC88B00DDF3C9 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 288FBEE120DFC88B00DDF3C9 /* ANYMethodLog.m */; };
+		288FBEE520DFC88B00DDF3C9 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 288FBEE420DFC88B00DDF3C9 /* LLDBTools.h */; };
+		288FBEE720DFC88B00DDF3C9 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 288FBEE620DFC88B00DDF3C9 /* LLDBTools.mm */; };
+		288FBEEC20DFC88B00DDF3C9 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 288FBEEB20DFC88B00DDF3C9 /* AntiAntiDebug.m */; };
+		288FBEEF20DFC88B00DDF3C9 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 288FBEEE20DFC88B00DDF3C9 /* fishhook.c */; };
+		288FBEF120DFC88B00DDF3C9 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 288FBEF020DFC88B00DDF3C9 /* fishhook.h */; };
+		288FBEF320DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 288FBEF220DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.h */; };
+		288FBEF520DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 288FBEF420DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.m */; };
+		288FBF0B20DFCFE400DDF3C9 /* BlockHookKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288FBF0020DFC9B400DDF3C9 /* BlockHookKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		288FBEC420DFC88B00DDF3C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 288FBEA520DFC88A00DDF3C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 288FBEC120DFC88B00DDF3C9;
+			remoteInfo = BlockHook_learn_MDDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		288FBEAD20DFC88A00DDF3C9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				288FBEC320DFC88B00DDF3C9 /* libBlockHook_learn_MDDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		282D039920DFE2BB009ECAEF /* IIFishBind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIFishBind.h; sourceTree = "<group>"; };
+		282D039A20DFE2BB009ECAEF /* IIFishBind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIFishBind.m; sourceTree = "<group>"; };
+		288FBEB020DFC88A00DDF3C9 /* BlockHook_learn_MD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockHook_learn_MD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		288FBEB320DFC88A00DDF3C9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		288FBEB420DFC88A00DDF3C9 /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
+		288FBEB620DFC88A00DDF3C9 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		288FBEB820DFC88A00DDF3C9 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		288FBEBB20DFC88A00DDF3C9 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		288FBEBC20DFC88A00DDF3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288FBEC220DFC88B00DDF3C9 /* libBlockHook_learn_MDDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libBlockHook_learn_MDDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		288FBEC720DFC88B00DDF3C9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		288FBEC920DFC88B00DDF3C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		288FBECB20DFC88B00DDF3C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288FBECF20DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = BlockHook_learn_MDDylib.xm; path = Logos/BlockHook_learn_MDDylib.xm; sourceTree = "<group>"; };
+		288FBED020DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = BlockHook_learn_MDDylib.mm; path = Logos/BlockHook_learn_MDDylib.mm; sourceTree = "<group>"; };
+		288FBED320DFC88B00DDF3C9 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		288FBED520DFC88B00DDF3C9 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		288FBED720DFC88B00DDF3C9 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		288FBED920DFC88B00DDF3C9 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		288FBEDB20DFC88B00DDF3C9 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		288FBEDD20DFC88B00DDF3C9 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		288FBEDF20DFC88B00DDF3C9 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = Config/ANYMethodLog.h; sourceTree = "<group>"; };
+		288FBEE120DFC88B00DDF3C9 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = Config/ANYMethodLog.m; sourceTree = "<group>"; };
+		288FBEE420DFC88B00DDF3C9 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		288FBEE620DFC88B00DDF3C9 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		288FBEE920DFC88B00DDF3C9 /* BlockHook_learn_MDDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlockHook_learn_MDDylib-Prefix.pch"; sourceTree = "<group>"; };
+		288FBEEB20DFC88B00DDF3C9 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		288FBEEE20DFC88B00DDF3C9 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		288FBEF020DFC88B00DDF3C9 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		288FBEF220DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockHook_learn_MDDylib.h; sourceTree = "<group>"; };
+		288FBEF420DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockHook_learn_MDDylib.m; sourceTree = "<group>"; };
+		288FBEFE20DFC97500DDF3C9 /* BlockHookKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BlockHookKit.framework; path = Carthage/Build/iOS/BlockHookKit.framework; sourceTree = "<group>"; };
+		288FBF0020DFC9B400DDF3C9 /* BlockHookKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BlockHookKit.framework; path = Carthage/Build/iOS/BlockHookKit.framework; sourceTree = "<group>"; };
+		288FBF0520DFCED600DDF3C9 /* 7191A42B-958B-331C-9C69-78C0B87EB985.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "7191A42B-958B-331C-9C69-78C0B87EB985.bcsymbolmap"; sourceTree = "<group>"; };
+		288FBF0620DFCED600DDF3C9 /* BlockHookKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BlockHookKit.framework; sourceTree = "<group>"; };
+		288FBF0720DFCED600DDF3C9 /* BlockHookKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = BlockHookKit.framework.dSYM; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		288FBEAA20DFC88A00DDF3C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288FBEBF20DFC88B00DDF3C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288FBEC820DFC88B00DDF3C9 /* JavaScriptCore.framework in Frameworks */,
+				288FBECC20DFC88B00DDF3C9 /* UIKit.framework in Frameworks */,
+				288FBF0B20DFCFE400DDF3C9 /* BlockHookKit.framework in Frameworks */,
+				288FBECA20DFC88B00DDF3C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		282D039820DFE2BB009ECAEF /* FishBind */ = {
+			isa = PBXGroup;
+			children = (
+				282D039920DFE2BB009ECAEF /* IIFishBind.h */,
+				282D039A20DFE2BB009ECAEF /* IIFishBind.m */,
+			);
+			path = FishBind;
+			sourceTree = "<group>";
+		};
+		288FBEA420DFC88A00DDF3C9 = {
+			isa = PBXGroup;
+			children = (
+				282D039820DFE2BB009ECAEF /* FishBind */,
+				288FBF0020DFC9B400DDF3C9 /* BlockHookKit.framework */,
+				288FBEB220DFC88A00DDF3C9 /* BlockHook_learn_MD */,
+				288FBECD20DFC88B00DDF3C9 /* BlockHook_learn_MDDylib */,
+				288FBEC620DFC88B00DDF3C9 /* Frameworks */,
+				288FBEB120DFC88A00DDF3C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		288FBEB120DFC88A00DDF3C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEB020DFC88A00DDF3C9 /* BlockHook_learn_MD.app */,
+				288FBEC220DFC88B00DDF3C9 /* libBlockHook_learn_MDDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		288FBEB220DFC88A00DDF3C9 /* BlockHook_learn_MD */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEB320DFC88A00DDF3C9 /* icon.png */,
+				288FBEB420DFC88A00DDF3C9 /* Target.plist */,
+				288FBEBC20DFC88A00DDF3C9 /* Info.plist */,
+				288FBEB520DFC88A00DDF3C9 /* Scripts */,
+				288FBEB720DFC88A00DDF3C9 /* Config */,
+				288FBEBA20DFC88A00DDF3C9 /* TargetApp */,
+			);
+			path = BlockHook_learn_MD;
+			sourceTree = "<group>";
+		};
+		288FBEB520DFC88A00DDF3C9 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEB620DFC88A00DDF3C9 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		288FBEB720DFC88A00DDF3C9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEB820DFC88A00DDF3C9 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		288FBEBA20DFC88A00DDF3C9 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEBB20DFC88A00DDF3C9 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		288FBEC620DFC88B00DDF3C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				288FBF0420DFCED600DDF3C9 /* iOS */,
+				288FBEFE20DFC97500DDF3C9 /* BlockHookKit.framework */,
+				288FBEC720DFC88B00DDF3C9 /* JavaScriptCore.framework */,
+				288FBEC920DFC88B00DDF3C9 /* Foundation.framework */,
+				288FBECB20DFC88B00DDF3C9 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		288FBECD20DFC88B00DDF3C9 /* BlockHook_learn_MDDylib */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEF220DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.h */,
+				288FBEF420DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.m */,
+				288FBECE20DFC88B00DDF3C9 /* Logos */,
+				288FBED220DFC88B00DDF3C9 /* Config */,
+				288FBEE320DFC88B00DDF3C9 /* Tools */,
+				288FBEEA20DFC88B00DDF3C9 /* AntiAntiDebug */,
+				288FBEED20DFC88B00DDF3C9 /* fishhook */,
+				288FBEE820DFC88B00DDF3C9 /* Supporting Files */,
+			);
+			path = BlockHook_learn_MDDylib;
+			sourceTree = "<group>";
+		};
+		288FBECE20DFC88B00DDF3C9 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				288FBECF20DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.xm */,
+				288FBED020DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		288FBED220DFC88B00DDF3C9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				288FBED320DFC88B00DDF3C9 /* MDConfigManager.h */,
+				288FBED520DFC88B00DDF3C9 /* MDConfigManager.m */,
+				288FBED720DFC88B00DDF3C9 /* MDCycriptManager.h */,
+				288FBED920DFC88B00DDF3C9 /* MDCycriptManager.m */,
+				288FBEDB20DFC88B00DDF3C9 /* MDMethodTrace.h */,
+				288FBEDD20DFC88B00DDF3C9 /* MDMethodTrace.m */,
+				288FBEDF20DFC88B00DDF3C9 /* ANYMethodLog.h */,
+				288FBEE120DFC88B00DDF3C9 /* ANYMethodLog.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		288FBEE320DFC88B00DDF3C9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEE420DFC88B00DDF3C9 /* LLDBTools.h */,
+				288FBEE620DFC88B00DDF3C9 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		288FBEE820DFC88B00DDF3C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEE920DFC88B00DDF3C9 /* BlockHook_learn_MDDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		288FBEEA20DFC88B00DDF3C9 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEEB20DFC88B00DDF3C9 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		288FBEED20DFC88B00DDF3C9 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				288FBEEE20DFC88B00DDF3C9 /* fishhook.c */,
+				288FBEF020DFC88B00DDF3C9 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		288FBF0420DFCED600DDF3C9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				288FBF0520DFCED600DDF3C9 /* 7191A42B-958B-331C-9C69-78C0B87EB985.bcsymbolmap */,
+				288FBF0620DFCED600DDF3C9 /* BlockHookKit.framework */,
+				288FBF0720DFCED600DDF3C9 /* BlockHookKit.framework.dSYM */,
+			);
+			name = iOS;
+			path = Carthage/Build/iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		288FBEC020DFC88B00DDF3C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288FBED820DFC88B00DDF3C9 /* MDCycriptManager.h in Headers */,
+				288FBEF320DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.h in Headers */,
+				288FBEDC20DFC88B00DDF3C9 /* MDMethodTrace.h in Headers */,
+				288FBEE520DFC88B00DDF3C9 /* LLDBTools.h in Headers */,
+				288FBED420DFC88B00DDF3C9 /* MDConfigManager.h in Headers */,
+				288FBEE020DFC88B00DDF3C9 /* ANYMethodLog.h in Headers */,
+				288FBEF120DFC88B00DDF3C9 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		288FBEAF20DFC88A00DDF3C9 /* BlockHook_learn_MD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288FBEFB20DFC88B00DDF3C9 /* Build configuration list for PBXNativeTarget "BlockHook_learn_MD" */;
+			buildPhases = (
+				288FBEA920DFC88A00DDF3C9 /* Sources */,
+				288FBEAA20DFC88A00DDF3C9 /* Frameworks */,
+				288FBEAB20DFC88A00DDF3C9 /* ShellScript */,
+				288FBEAC20DFC88A00DDF3C9 /* Resources */,
+				288FBEAD20DFC88A00DDF3C9 /* CopyFiles */,
+				288FBEAE20DFC88A00DDF3C9 /* ShellScript */,
+				288FBF0320DFC9E200DDF3C9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				288FBEC520DFC88B00DDF3C9 /* PBXTargetDependency */,
+			);
+			name = BlockHook_learn_MD;
+			productName = BlockHook_learn_MD;
+			productReference = 288FBEB020DFC88A00DDF3C9 /* BlockHook_learn_MD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		288FBEC120DFC88B00DDF3C9 /* BlockHook_learn_MDDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288FBEF820DFC88B00DDF3C9 /* Build configuration list for PBXNativeTarget "BlockHook_learn_MDDylib" */;
+			buildPhases = (
+				288FBEBD20DFC88B00DDF3C9 /* ShellScript */,
+				288FBEBE20DFC88B00DDF3C9 /* Sources */,
+				288FBEBF20DFC88B00DDF3C9 /* Frameworks */,
+				288FBEC020DFC88B00DDF3C9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockHook_learn_MDDylib;
+			productName = BlockHook_learn_MDDylib;
+			productReference = 288FBEC220DFC88B00DDF3C9 /* libBlockHook_learn_MDDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		288FBEA520DFC88A00DDF3C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "王磊磊";
+				TargetAttributes = {
+					288FBEAF20DFC88A00DDF3C9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					288FBEC120DFC88B00DDF3C9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 288FBEA820DFC88A00DDF3C9 /* Build configuration list for PBXProject "BlockHook_learn_MD" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 288FBEA420DFC88A00DDF3C9;
+			productRefGroup = 288FBEB120DFC88A00DDF3C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				288FBEAF20DFC88A00DDF3C9 /* BlockHook_learn_MD */,
+				288FBEC120DFC88B00DDF3C9 /* BlockHook_learn_MDDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		288FBEAC20DFC88A00DDF3C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288FBEB920DFC88A00DDF3C9 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		288FBEAB20DFC88A00DDF3C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		288FBEAE20DFC88A00DDF3C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		288FBEBD20DFC88B00DDF3C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		288FBF0320DFC9E200DDF3C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BlockHookKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/Carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		288FBEA920DFC88A00DDF3C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288FBEBE20DFC88B00DDF3C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288FBEF520DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.m in Sources */,
+				288FBEDA20DFC88B00DDF3C9 /* MDCycriptManager.m in Sources */,
+				282D039C20DFE2CD009ECAEF /* IIFishBind.m in Sources */,
+				288FBEE220DFC88B00DDF3C9 /* ANYMethodLog.m in Sources */,
+				288FBED620DFC88B00DDF3C9 /* MDConfigManager.m in Sources */,
+				288FBEE720DFC88B00DDF3C9 /* LLDBTools.mm in Sources */,
+				288FBED120DFC88B00DDF3C9 /* BlockHook_learn_MDDylib.mm in Sources */,
+				288FBEDE20DFC88B00DDF3C9 /* MDMethodTrace.m in Sources */,
+				288FBEEF20DFC88B00DDF3C9 /* fishhook.c in Sources */,
+				288FBEEC20DFC88B00DDF3C9 /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		288FBEC520DFC88B00DDF3C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 288FBEC120DFC88B00DDF3C9 /* BlockHook_learn_MDDylib */;
+			targetProxy = 288FBEC420DFC88B00DDF3C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		288FBEF620DFC88B00DDF3C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		288FBEF720DFC88B00DDF3C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		288FBEF920DFC88B00DDF3C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K524Q8368;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlockHook_learn_MDDylib/BlockHook_learn_MDDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libBlockHook_learn_MDDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"BlockHook_learn_MDDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		288FBEFA20DFC88B00DDF3C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 8K524Q8368;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlockHook_learn_MDDylib/BlockHook_learn_MDDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libBlockHook_learn_MDDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"BlockHook_learn_MDDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		288FBEFC20DFC88B00DDF3C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K524Q8368;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BlockHook_learn_MD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = aaa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		288FBEFD20DFC88B00DDF3C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K524Q8368;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BlockHook_learn_MD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = aaa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		288FBEA820DFC88A00DDF3C9 /* Build configuration list for PBXProject "BlockHook_learn_MD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288FBEF620DFC88B00DDF3C9 /* Debug */,
+				288FBEF720DFC88B00DDF3C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288FBEF820DFC88B00DDF3C9 /* Build configuration list for PBXNativeTarget "BlockHook_learn_MDDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288FBEF920DFC88B00DDF3C9 /* Debug */,
+				288FBEFA20DFC88B00DDF3C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288FBEFB20DFC88B00DDF3C9 /* Build configuration list for PBXNativeTarget "BlockHook_learn_MD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288FBEFC20DFC88B00DDF3C9 /* Debug */,
+				288FBEFD20DFC88B00DDF3C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 288FBEA520DFC88A00DDF3C9 /* Project object */;
+}

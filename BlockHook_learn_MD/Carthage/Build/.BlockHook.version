@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.0.2",
+  "iOS" : [
+    {
+      "name" : "BlockHookKit",
+      "hash" : "8717236977a990ed8437dbcd6a027a0019e731bda37cac576e7af9696b9b5f6c"
+    }
+  ]
+}
