@@ -204,8 +204,6 @@
 				28FD92D320DFA9D100FA7107 /* Resources */,
 				288FBE9F20DFB9BE00DDF3C9 /* Embed Frameworks */,
 				288FBEA020DFBA9300DDF3C9 /* ShellScript */,
-				39A6D80E141F49DCBE785539 /* [CP] Embed Pods Frameworks */,
-				F9A8C3ADBF34E97B13131107 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,8 +222,6 @@
 				28FD92E920DFA9D200FA7107 /* Sources */,
 				28FD92EA20DFA9D200FA7107 /* Frameworks */,
 				28FD92EB20DFA9D200FA7107 /* Resources */,
-				8801F5A95AF1DE65164B42AB /* [CP] Embed Pods Frameworks */,
-				4D4ADDA30CCE28A5787F4A7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,8 +241,6 @@
 				28FD92F420DFA9D200FA7107 /* Sources */,
 				28FD92F520DFA9D200FA7107 /* Frameworks */,
 				28FD92F620DFA9D200FA7107 /* Resources */,
-				D964FB6BA729318F658CD1CF /* [CP] Embed Pods Frameworks */,
-				3CF7E7CE1625E6D5B54732FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,51 +339,6 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/Carthage copy-frameworks";
 		};
-		39A6D80E141F49DCBE785539 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLear/Pods-BlockHookLear-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3CF7E7CE1625E6D5B54732FE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLearUITests/Pods-BlockHookLearUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4D4ADDA30CCE28A5787F4A7C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLearTests/Pods-BlockHookLearTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		512D65C4BD4BEEC408864071 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,36 +375,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8801F5A95AF1DE65164B42AB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLearTests/Pods-BlockHookLearTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D964FB6BA729318F658CD1CF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLearUITests/Pods-BlockHookLearUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F5E3F4770628208938639CFE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,21 +391,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9A8C3ADBF34E97B13131107 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockHookLear/Pods-BlockHookLear-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
