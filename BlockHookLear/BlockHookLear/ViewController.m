@@ -39,13 +39,13 @@
 //        *(int *)(token.retValue) = x * y;
         NSLog(@"hook instead: %@", responseObject);
     }];
-    [IIFishBind bindFishes:@[
-                             [IIFish postBlock:newSucess],
-                             [IIFish observer:self
-                                     callBack:^(IIFishCallBack *callBack, id deadFish) {
-                                         NSLog(@"fuck %@ + %@ ", callBack.args[0], callBack.args[1]);
-                                         // 3.1 + 4.1 = 7.199999999999999
-                                     }]
+//    [IIFishBind bindFishes:@[
+//                             [IIFish postBlock:newSucess],
+//                             [IIFish observer:self
+//                                     callBack:^(IIFishCallBack *callBack, id deadFish) {
+//                                         NSLog(@"fuck %@ + %@ ", callBack.args[0], callBack.args[1]);
+//                                         // 3.1 + 4.1 = 7.199999999999999
+//                                     }]
                              ]];
 //    BHToken *tokenAfter = [block block_hookWithMode:BlockHookModeAfter usingBlock:^(BHToken *token, int x, int y){
 //        // print args and result
