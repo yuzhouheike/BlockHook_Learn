@@ -173,7 +173,7 @@ CHConstructor{
     CHHook1(CustomViewController, setNewProperty);
     
     CHLoadLateClass(AFHTTPSessionManager);
-//    CHClassHook(5, AFHTTPSessionManager, POST, parameters, progress, success, failure);
-//    CHClassHook(5, AFHTTPSessionManager, GET, parameters, progress, success, failure);
+    CHClassHook(5, AFHTTPSessionManager, POST, parameters, progress, success, failure);
+    CHClassHook(5, AFHTTPSessionManager, GET, parameters, progress, success, failure);
 }
 
