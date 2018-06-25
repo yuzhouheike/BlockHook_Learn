@@ -32,11 +32,11 @@
     
   
     
-    BHToken *tokenInstead = [block block_hookWithMode:BlockHookModeInstead usingBlock:^(BHToken *token, int x,id   responseObject){
+    BHToken *tokenInstead = [block block_hookWithMode:BlockHookModeInstead usingBlock:^(BHToken *token, int x,int   responseObject){
         [token invokeOriginalBlock];
         NSLog(@"let me see original result: %d", *(int *)(token.retValue));
         // change the block imp and result
-//        *(int *)(token.retValue) = x * y;
+        *(int *)(token.retValue) = x * responseObject;
         NSLog(@"hook instead: %@", responseObject);
     }];
     
