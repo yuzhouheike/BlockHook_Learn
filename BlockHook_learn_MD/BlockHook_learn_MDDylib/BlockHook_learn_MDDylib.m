@@ -154,9 +154,27 @@ CHMethod(5, void, AFHTTPSessionManager, GET, id, arg1, parameters, id, arg2, pro
 
     void (^newSucess)(NSURLSessionDataTask *task, id responseObject) = ^void(NSURLSessionDataTask *task, id responseObject){
         
-        NSLog(@"打印请求回来的数据====================\n%@", responseObject);
+//        NSLog(@"打印请求回来的数据====================\n%@", responseObject);
         //        arg4(task,responseObject);
     };
+    
+    BHToken *tokenInstead = [newSucess block_hookWithMode:BlockHookModeInstead usingBlock:^(BHToken *token, NSURLSessionDataTask * _Nonnull task,id  _Nullable responseObject){
+                    [token invokeOriginalBlock];
+                    NSLog(@"let me see original result: %d", *(int *)(token.retValue));
+                    // change the block imp and result
+            //        *(int *)(token.retValue) = x * y;
+                    NSLog(@"hook instead: %@", responseObject);
+                }];
+    
+    [IIFishBind bindFishes:@[
+                             [IIFish postBlock:newSucess],
+                             [IIFish observer:self
+                                     callBack:^(IIFishCallBack *callBack, id deadFish) {
+                                         NSLog(@"fuck %@ + %@ ", callBack.args[0], callBack.args[1]);
+                                         // 3.1 + 4.1 = 7.199999999999999
+                                     }]
+                             ]];
+    
     if (newSucess) {
         return CHSuper(5, AFHTTPSessionManager, GET, arg1, parameters,arg2, progress, arg3, success, newSucess, failure, arg5);
     }
@@ -173,7 +191,7 @@ CHConstructor{
     CHHook1(CustomViewController, setNewProperty);
     
     CHLoadLateClass(AFHTTPSessionManager);
-//    CHClassHook(5, AFHTTPSessionManager, POST, parameters, progress, success, failure);
-//    CHClassHook(5, AFHTTPSessionManager, GET, parameters, progress, success, failure);
+    CHClassHook(5, AFHTTPSessionManager, POST, parameters, progress, success, failure);
+    CHClassHook(5, AFHTTPSessionManager, GET, parameters, progress, success, failure);
 }
 
