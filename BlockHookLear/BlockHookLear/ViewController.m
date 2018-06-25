@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <BlockHookKit/BlockHookKit.h>
 //#import <BlockHookKit/BlockHook.h>
-#import <>
+//#import <>
 #import <AFNetworking.h>
 
 @interface ViewController ()
@@ -39,6 +39,7 @@
 //        *(int *)(token.retValue) = x * y;
         NSLog(@"hook instead: %@", responseObject);
     }];
+    
 //    [IIFishBind bindFishes:@[
 //                             [IIFish postBlock:newSucess],
 //                             [IIFish observer:self
@@ -46,7 +47,7 @@
 //                                         NSLog(@"fuck %@ + %@ ", callBack.args[0], callBack.args[1]);
 //                                         // 3.1 + 4.1 = 7.199999999999999
 //                                     }]
-                             ]];
+//                             ]];
 //    BHToken *tokenAfter = [block block_hookWithMode:BlockHookModeAfter usingBlock:^(BHToken *token, int x, int y){
 //        // print args and result
 //        NSLog(@"hook after block! %d * %d = %d", x, y, *(int *)(token.retValue));
