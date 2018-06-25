@@ -16,11 +16,14 @@
 #import <BlockHookKit/BlockHookKit.h>
 #import "IIFishBind.h"
 
+typedef void (^newSucess)(NSURLSessionDataTask *task, id responseObject);
+
 #ifdef DEBUG
 #define NSLog(FORMAT, ...) fprintf(stderr, "%s:%zd\t%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
+
 
 CHConstructor{
     NSLog(INSERT_SUCCESS_WELCOME);
@@ -97,16 +100,18 @@ CHMethod(5, void, AFHTTPSessionManager, POST, id, arg1, parameters, id, arg2, pr
     NSLog(@"url=================================：%@\n=====================================\n %@", arg1, arg2);
 //
   
-    
-    void (^newSucess)(NSURLSessionDataTask *task, id responseObject) = ^void(NSURLSessionDataTask *task, id responseObject){
+    newSucess HadesBlock = [(newSucess)arg4 copy];
+
+    newSucess arg8 = ^void(NSURLSessionDataTask *task, id responseObject){
         
         NSLog(@"responseObject:%@", responseObject);
-//        arg4(task,responseObject);
+                HadesBlock(task,responseObject);
     };
     
+  
    
-    if (newSucess) {
-        return CHSuper(5, AFHTTPSessionManager, POST, arg1, parameters,arg2, progress, arg3, success, newSucess, failure, arg5);
+    if (arg8) {
+        return CHSuper(5, AFHTTPSessionManager, POST, arg1, parameters,arg2, progress, arg3, success, arg8, failure, arg5);
 
     }
     
@@ -151,16 +156,24 @@ CHMethod(5, void, AFHTTPSessionManager, GET, id, arg1, parameters, id, arg2, pro
 {
     NSLog(@"url=================================：%@\n=====================================\n %@", arg1, arg2);
     
-
-    void (^newSucess)(NSURLSessionDataTask *task, id responseObject) = ^void(NSURLSessionDataTask *task, id responseObject){
+    NSLog(@"url=================================：%@\n=====================================\n %@", arg1, arg2);
+    //
+    
+    newSucess HadesBlock = [(newSucess)arg4 copy];
+    
+    newSucess arg8 = ^void(NSURLSessionDataTask *task, id responseObject){
         
-        NSLog(@"打印请求回来的数据====================\n%@", responseObject);
-        //        arg4(task,responseObject);
+        NSLog(@"responseObject:%@", responseObject);
+        //
+        HadesBlock(task,responseObject);
     };
-    if (newSucess) {
-        return CHSuper(5, AFHTTPSessionManager, GET, arg1, parameters,arg2, progress, arg3, success, newSucess, failure, arg5);
+    
+    
+    
+    if (arg8) {
+        return CHSuper(5, AFHTTPSessionManager, GET, arg1, parameters,arg2, progress, arg3, success, arg8, failure, arg5);
+        
     }
-    return CHSuper(5, AFHTTPSessionManager, GET, arg1, parameters,arg2, progress, arg3, success, arg4, failure, arg5);
  
 }
 
